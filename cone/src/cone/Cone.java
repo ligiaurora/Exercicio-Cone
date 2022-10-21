@@ -63,7 +63,8 @@ public class Cone {
 
 
 	public void setZ(float z) {
-		this.z = z;
+		if (z > 0)
+			this.z = z;	
 	}
 
 
@@ -73,7 +74,8 @@ public class Cone {
 
 
 	public void setR(float r) {
-		this.r = r;
+		if (r > 0)
+			this.r = r;
 	}
 
 
@@ -83,7 +85,8 @@ public class Cone {
 
 
 	public void setTinta(int tinta) {
-		this.tinta = tinta;
+		if (tinta > 0 && tinta < 4)
+			this.tinta = tinta;
 	}
 
 
